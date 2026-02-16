@@ -1,9 +1,4 @@
-local callback = REPENTOGON and ModCallbacks.MC_POST_MODS_LOADED or ModCallbacks.MC_POST_GAME_STARTED
-local loaded = false
-RestoredCollection:AddCallback(callback, function ()
-    if not FiendFolio or loaded then
-        return
-    end
+RestoredCollection:AddModCompat("FiendFolio", function ()
     local referenceItems = { --Code refferenced from https://steamcommunity.com/sharedfiles/filedetails/?id=3281491787&searchtext=d.edith--
         Passives = {
             { ID = RestoredCollection.Enums.CollectibleType.COLLECTIBLE_BLANK_BOMBS,    Reference = "Enter the Gungeon" },
@@ -26,5 +21,4 @@ RestoredCollection:AddCallback(callback, function ()
 			RestoredCollection.Enums.CollectibleType.COLLECTIBLE_MELTED_CANDLE,
 			RestoredCollection.Enums.CollectibleType.COLLECTIBLE_TAMMYS_TAIL_TC,
 		})
-    loaded = true
 end)

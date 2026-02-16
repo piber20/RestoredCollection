@@ -71,11 +71,7 @@ include("lua.items.trinkets.GameSquid.main")
 --include("lua.entities.illusions.main")
 
 --mod compatibility
-include("lua.mod_compat.eid.eid")
-include("lua.mod_compat.encyclopedia.encyclopedia")
-include("lua.mod_compat.MiniMapiItems.MiniMapiItems")
-include("lua.mod_compat.community_remix.cr_compat")
-include("lua.mod_compat.fiendfolio.main")
+include("lua.mod_compat.main")
 
 --misc
 include("lua.items.funny")
