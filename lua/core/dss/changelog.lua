@@ -1,5 +1,10 @@
 local modname = "Restored Collection"
 
+DeadSeaScrollsMenu.AddChangelog(modname, "v1.30.1",[[{{FSIZE2}}fixes
+- fixed encyclopedia errors
+]],
+{"restored", "collection", "", "v1.30.1", "update"}, false, false)
+
 DeadSeaScrollsMenu.AddChangelog(modname, "v1.30",[[{{FSIZE2}}fixes
 - fixed toggled off items and
 trinkets appearing on eden start
