@@ -16,7 +16,7 @@ RestoredCollection:AddModCompat("EID", function()
 		en_us = {
 			[RestoredCollection.Enums.CollectibleType.COLLECTIBLE_STONE_BOMBS] = {
 				Name = "Stone Bombs",
-				Description = "{{Bomb}} +5 Bombs#Bombs create rock waves in all 4 cardinal directions#The rock waves can damage enemies, destroy objects, and reveal secret rooms",
+				Description = "{{Bomb}} +5 Bombs#Bombs create rock waves in all 4 cardinal directions#The rock waves can damage enemies, fill pits, destroy objects, and reveal secret rooms",
 			},
 			[RestoredCollection.Enums.CollectibleType.COLLECTIBLE_BLANK_BOMBS] = {
 				Name = "Blank Bombs",
@@ -100,7 +100,7 @@ RestoredCollection:AddModCompat("EID", function()
 			},
 			[RestoredCollection.Enums.CollectibleType.COLLECTIBLE_MELTED_CANDLE] = {
 				Name = "Melted Candle",
-				Description = "↑ {{Blank}} {{Tears}} +0.5 tears#{{Burning}} {{Slow}} 30% chance to shoot a wax tear that burns and slows enemies#Gives an aura that slowly grows when shooting. Shrinks when not shooting#{{Burning}} Aura burns enemies",
+				Description = "↑ {{Blank}} {{Tears}} +0.5 tears#{{Burning}} {{Slow}} 30% chance to shoot a wax tear that burns and slows enemies#Gives a {{Burning}} burning aura that slowly grows when shooting. Shrinks when not shooting",
 			},
 			[RestoredCollection.Enums.CollectibleType.COLLECTIBLE_TAMMYS_TAIL_TC] = {
 				Name = "Tammy's Tail",
@@ -462,7 +462,7 @@ RestoredCollection:AddModCompat("EID", function()
 			[RestoredCollection.Enums.TrinketType.TRINKET_GAME_SQUID_TC] = {
 				Name = "Game Sqiud",
 				Description = "{{Slow}} 8% chance to a shoot slowing tear that leaves black creep on impact #{{Luck}} 100% chance at 18 luck",
-				GoldenDescription = "↑ +3% on top for every trinket multiplier",
+				GoldenDescription = "↑ +3% for every trinket multiplier",
 			},
 		},
 		ru = {
