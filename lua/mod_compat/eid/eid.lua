@@ -110,7 +110,7 @@ RestoredCollection:AddModCompat("EID", function()
 		ru = {
 			[RestoredCollection.Enums.CollectibleType.COLLECTIBLE_STONE_BOMBS] = {
 				Name = "Каменные бомбы",
-				Description = "{{Bomb}} +5 бомб#Бомбы теперь создают каменные волны во все 4-е основные стороны#Каменные волны могут наносить урон врагам, разрушать объекты и открывать секретные комнаты",
+				Description = "{{Bomb}} +5 бомб#Бомбы теперь создают каменные волны во все 4-е основные стороны#Каменные волны могут наносить урон врагам, заполнять ямы, разрушать объекты и открывать секретные комнаты",
 			},
 			[RestoredCollection.Enums.CollectibleType.COLLECTIBLE_BLANK_BOMBS] = {
 				Name = "Пустые бомбы",
@@ -194,7 +194,7 @@ RestoredCollection:AddModCompat("EID", function()
 			},
 			[RestoredCollection.Enums.CollectibleType.COLLECTIBLE_MELTED_CANDLE] = {
 				Name = "Расплавленная свеча",
-				Description = "↑ {{Blank}} {{Tears}} +0.5 к скорострельности#{{Burning}} {{Slow}} 30% шанс выстрелить восковой слезой, которая сжигает и замедляет врагов#Дает ауру которая медлено растет при стрельбе. Сжимается, когда Айзек не атакует#{{Burning}} Аура сжигает врагов",
+				Description = "↑ {{Blank}} {{Tears}} +0.5 к скорострельности#{{Burning}} {{Slow}} 30% шанс выстрелить восковой слезой, которая сжигает и замедляет врагов#Дает {{Buring}} поджигающую ауру которая медлено растет при стрельбе. Сжимается, когда Айзек не атакует",
 			},
 			[RestoredCollection.Enums.CollectibleType.COLLECTIBLE_TAMMYS_TAIL_TC] = {
 				Name = "Хвост Тамми",
@@ -469,7 +469,7 @@ RestoredCollection:AddModCompat("EID", function()
 			[RestoredCollection.Enums.TrinketType.TRINKET_GAME_SQUID_TC] = {
 				Name = "Игровой кальмар",
 				Description = "{{Slow}} 8% шанс выстрелить замедляющей слезой, которая оставляет черную лужу при столкновении #{{Luck}} 100% шанс с 18 удачи",
-				GoldenDescription = "↑ +3% дополнительно за каждый множитель брелка",
+				GoldenDescription = "↑ +3% за каждый множитель брелка",
 			},
 		},
 		spa = {
