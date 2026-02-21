@@ -38,7 +38,6 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description for the item." },
 						{ str = "Encyclopedia - Shows a more detailed description for the item." },
-						{ str = "Minimap Items - Shows a minimap icon for the item." },
 					},
 					{ -- Credits
 						{ str = "Credits", fsize = 2, clr = 3, halign = 0 },
@@ -75,7 +74,6 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description for the item." },
 						{ str = "Encyclopedia - Shows a more detailed description for the item." },
-						{ str = "Minimap Items - Shows a minimap icon for the item." },
 					},
 					{ -- Credits
 						{ str = "Credits", fsize = 2, clr = 3, halign = 0 },
@@ -124,7 +122,6 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description for the item." },
 						{ str = "Encyclopedia - Shows a more detailed description for the item." },
-						{ str = "Minimap Items - Shows a minimap icon for the item." },
 						{
 							str = "Sewing Machine - Increases damage and Makes Checked Mate move like queen chess piece on last upgrade level.",
 						},
@@ -168,7 +165,6 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description of the item." },
 						{ str = "Encyclopedia - Shows a description of the item." },
-						{ str = "Minimap Items - Shows a minimap icon of the item." },
 					},
 					{ -- Credits
 						{ str = "Credits", fsize = 2, clr = 3, halign = 0 },
@@ -214,7 +210,6 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description of the item." },
 						{ str = "Encyclopedia - Shows a description of the item." },
-						{ str = "Minimap Items - Shows a minimap icon of the item." },
 					},
 					{ -- Credits
 						{ str = "Credits", fsize = 2, clr = 3, halign = 0 },
@@ -271,7 +266,6 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description of the item." },
 						{ str = "Encyclopedia - Shows a description of the item." },
-						{ str = "Minimap Items - Shows a minimap icon of the item." },
 					},
 					{ -- Credits
 						{ str = "Credits", fsize = 2, clr = 3, halign = 0 },
@@ -321,7 +315,6 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description of the item." },
 						{ str = "Encyclopedia - Shows a description of the item." },
-						{ str = "Minimap Items - Shows a minimap icon of the item." },
 						{
 							str = "Sewing Machine - Higher fire rate per flame and Isaac can fire even without flames on last upgrade level.",
 						},
@@ -351,13 +344,17 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "+5 bombs." },
 						{ str = "Collectibles within the explosion radius will be rerolled." },
 						{ str = "Holding dice active items will add additional effects." },
-						{ str = "25% chance for D6 and Spindown effects to destroy items." },
+						{ str = "5% chance for D6 and Spindown effects to destroy items." },
+						{ str = "10% chance for Eternal D6 effect to destroy items." },
 					},
 					{ -- Synergies
 						{ str = "Synergies", fsize = 2, clr = 3, halign = 0 },
 						{ str = "D1 - Duplicates one pickup within the explosion radius." },
 						{ str = "D4 - Rerolls the items of any player within the explosion radius." },
+						{ str = "D7 - Restarts a room and respawns all enemies." },
 						{ str = "D8 - Rerolls the stats of any player within the explosion radius." },
+						{ str = "D10 - Devolves all enemies in the room." },
+						{ str = "D12 - Rerolls any obstacle into another random obstacle." },
 						{ str = "D20 - Rerolls pickups within the explosion radius." },
 						{ str = "D100 - Combines the effects of D1, D4, D8 and D20." },
 						{
@@ -365,7 +362,7 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						},
 						{ str = "Repentogon only interactions/synergies", fsize = 2, clr = 3, halign = 0 },
 						{ str = "D4 bombs don't reroll Dice Bombs from players inventory." },
-						{ str = "D Infinity - Uses effect of picked dice that has synergy." },
+						{ str = "D Infinity - Uses effect of selected dice." },
 					},
 					{ -- Trivia
 						{ str = "Trivia", fsize = 2, clr = 3, halign = 0 },
@@ -377,7 +374,6 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description of the item." },
 						{ str = "Encyclopedia - Shows a description of the item." },
-						{ str = "Minimap Items - Shows a minimap icon of the item." },
 					},
 					{ -- Credits
 						{ str = "Credits", fsize = 2, clr = 3, halign = 0 },
@@ -415,7 +411,6 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description of the item." },
 						{ str = "Encyclopedia - Shows a description of the item." },
-						{ str = "Minimap Items - Shows a minimap icon of the item." },
 					},
 					{ -- Credits
 						{ str = "Credits", fsize = 2, clr = 3, halign = 0 },
@@ -464,7 +459,6 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description for the item." },
 						{ str = "Encyclopedia - Shows a more detailed description for the item." },
-						{ str = "Minimap Items - Shows a minimap icon for the item." },
 					},
 					{ -- Credits
 						{ str = "Credits", fsize = 2, clr = 3, halign = 0 },
@@ -507,7 +501,6 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description for the item." },
 						{ str = "Encyclopedia - Shows a more detailed description for the item." },
-						{ str = "Minimap Items - Shows a minimap icon for the item." },
 					},
 					{ -- Credits
 						{ str = "Credits", fsize = 2, clr = 3, halign = 0 },
@@ -564,7 +557,6 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description for the item." },
 						{ str = "Encyclopedia - Shows a more detailed description for the item." },
-						{ str = "Minimap Items - Shows a minimap icon for the item." },
 					},
 					{ -- Credits
 						{ str = "Credits", fsize = 2, clr = 3, halign = 0 },
@@ -629,7 +621,6 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description for the item." },
 						{ str = "Encyclopedia - Shows a more detailed description for the item." },
-						{ str = "Minimap Items - Shows a minimap icon for the item." },
 					},
 					{ -- Credits
 						{ str = "Credits", fsize = 2, clr = 3, halign = 0 },
@@ -673,7 +664,6 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description for the item." },
 						{ str = "Encyclopedia - Shows a more detailed description for the item." },
-						{ str = "Minimap Items - Shows a minimap icon for the item." },
 					},
 					{ -- Credits
 						{ str = "Credits", fsize = 2, clr = 3, halign = 0 },
@@ -718,7 +708,7 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description for the item." },
 						{ str = "Encyclopedia - Shows a more detailed description for the item." },
-						{ str = "Minimap Items - Shows a minimap icon for the item." },
+
 						{ str = "Fiend Folio - Pill effects." },
 					},
 					{ -- Credits
@@ -760,7 +750,6 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description for the item." },
 						{ str = "Encyclopedia - Shows a more detailed description for the item." },
-						{ str = "Minimap Items - Shows a minimap icon for the item." },
 					},
 					{ -- Credits
 						{ str = "Credits", fsize = 2, clr = 3, halign = 0 },
@@ -810,7 +799,6 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description for the item." },
 						{ str = "Encyclopedia - Shows a more detailed description for the item." },
-						{ str = "Minimap Items - Shows a minimap icon for the item." },
 					},
 					{ -- Credits
 						{ str = "Credits", fsize = 2, clr = 3, halign = 0 },
@@ -847,7 +835,7 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description for the item." },
 						{ str = "Encyclopedia - Shows a more detailed description for the item." },
-						{ str = "Minimap Items - Shows a minimap icon for the item." },
+
 						{ str = "Community Remix - Counts towards the Max transformation." },
 					},
 					{ -- Credits
@@ -887,7 +875,6 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description for the item." },
 						{ str = "Encyclopedia - Shows a more detailed description for the item." },
-						{ str = "Minimap Items - Shows a minimap icon for the item." },
 					},
 					{ -- Credits
 						{ str = "Credits", fsize = 2, clr = 3, halign = 0 },
@@ -925,7 +912,7 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description for the item." },
 						{ str = "Encyclopedia - Shows a more detailed description for the item." },
-						{ str = "Minimap Items - Shows a minimap icon for the item." },
+
 						{ str = "Fiend Folio - uses mod's red heart type to charge item." },
 						{ str = "Repentance Plus - uses mod's red heart type to charge item." },
 					},
@@ -966,7 +953,6 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description for the item." },
 						{ str = "Encyclopedia - Shows a more detailed description for the item." },
-						{ str = "Minimap Items - Shows a minimap icon for the item." },
 					},
 					{ -- Credits
 						{ str = "Credits", fsize = 2, clr = 3, halign = 0 },
@@ -1010,7 +996,6 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "Mod Compatibility", fsize = 2, clr = 3, halign = 0 },
 						{ str = "EID - Shows a description for the item." },
 						{ str = "Encyclopedia - Shows a more detailed description for the item." },
-						{ str = "Minimap Items - Shows a minimap icon for the item." },
 					},
 					{ -- Credits
 						{ str = "Credits", fsize = 2, clr = 3, halign = 0 },
@@ -1048,7 +1033,6 @@ RestoredCollection:AddModCompat("Encyclopedia", function()
 						{ str = "EID - Shows a description for the item." },
 						{ str = "Encyclopedia - Shows a more detailed description for the item." },
 						{ str = "Community Remix - Counts towards the Tammy transformation." },
-						{ str = "Minimap Items - Shows a minimap icon for the item." },
 					},
 					{ -- Credits
 						{ str = "Credits", fsize = 2, clr = 3, halign = 0 },

@@ -28,7 +28,7 @@ RestoredCollection:AddModCompat("EID", function()
 			},
 			[RestoredCollection.Enums.CollectibleType.COLLECTIBLE_DICE_BOMBS] = {
 				Name = "Dice Bombs",
-				Description = "{{Bomb}} +5 Bombs#Bombs reroll pedestal items within its explosion radius#Has a 25% chance to destroy items instead of rerolling them",
+				Description = "{{Bomb}} +5 Bombs#Bombs reroll pedestal items within its explosion radius#Has a 5% chance to destroy items instead of rerolling them",
 			},
 			[RestoredCollection.Enums.CollectibleType.COLLECTIBLE_BOOK_OF_DESPAIR] = {
 				Name = "Book of Despair",
@@ -122,7 +122,7 @@ RestoredCollection:AddModCompat("EID", function()
 			},
 			[RestoredCollection.Enums.CollectibleType.COLLECTIBLE_DICE_BOMBS] = {
 				Name = "Бомбы-кубики",
-				Description = "{{Bomb}} +5 бомб#Бомбы меняют артефакты на пьедесталах в радиусе взрыва#25% шанс уничтожить пьедестал вместо замены артефакта",
+				Description = "{{Bomb}} +5 бомб#Бомбы меняют артефакты на пьедесталах в радиусе взрыва#5% шанс уничтожить пьедестал вместо замены артефакта",
 			},
 			[RestoredCollection.Enums.CollectibleType.COLLECTIBLE_BOOK_OF_DESPAIR] = {
 				Name = "Книга отчаяния",
@@ -302,7 +302,7 @@ RestoredCollection:AddModCompat("EID", function()
 			},
 			[RestoredCollection.Enums.CollectibleType.COLLECTIBLE_DICE_BOMBS] = {
 				Name = "Bombas de Dado",
-				Description = "{{Bomb}} +5 Bombas#Explosões agora irão rerolar os pedestais de item pegos na área de explosão#Tem 25% de chance de destruir items ao invés de rerolar eles#Possuir certos items ativos de dados adicionará efeitos adicionais",
+				Description = "{{Bomb}} +5 Bombas#Explosões agora irão rerolar os pedestais de item pegos na área de explosão#Tem 5% de chance de destruir items ao invés de rerolar eles#Possuir certos items ativos de dados adicionará efeitos adicionais",
 			},
 			[RestoredCollection.Enums.CollectibleType.COLLECTIBLE_BOOK_OF_DESPAIR] = {
 				Name = "Livro do Desespero",
@@ -528,18 +528,24 @@ RestoredCollection:AddModCompat("EID", function()
 						en_us = {
 							[CollectibleType.COLLECTIBLE_D1] = "Activates D1 effect for pickups in explosion's radius",
 							[CollectibleType.COLLECTIBLE_D4] = "Activates D4 effect if Isaac's in explosion's radius",
+							[CollectibleType.COLLECTIBLE_D7] = "Activates D7 effect for room",
 							[CollectibleType.COLLECTIBLE_D8] = "Activates D8 effect if Isaac's in explosion's radius",
+							[CollectibleType.COLLECTIBLE_D10] = "Activates D10 effect for room",
+							[CollectibleType.COLLECTIBLE_D12] = "Activates D12 effect for room",
 							[CollectibleType.COLLECTIBLE_D20] = "Activates D20 effect for pickups in explosion's radius",
 							[CollectibleType.COLLECTIBLE_D100] = "Activates D100 effect for Isaac and pickups in explosion's radius",
 							[CollectibleType.COLLECTIBLE_SPINDOWN_DICE] = "Activates Spindown Dice effect for collectibles in explosion's radius",
 						},
 						ru = {
-							[CollectibleType.COLLECTIBLE_D1] = "Активирует еффект D1 кубика для подбираемых предметов в радиусе взрыва",
-							[CollectibleType.COLLECTIBLE_D4] = "Активирует еффект D4 кубика если Айзек в радиусе взрыва",
-							[CollectibleType.COLLECTIBLE_D8] = "Активирует еффект D8 кубика если Айзек в радиусе взрыва",
-							[CollectibleType.COLLECTIBLE_D20] = "Активирует еффект D20 кубика для подбираемых предметов в радиусе взрыва",
-							[CollectibleType.COLLECTIBLE_D100] = "Активирует еффект D100 для Айзека и подбираемых предметов в радиусе взрыва",
-							[CollectibleType.COLLECTIBLE_SPINDOWN_DICE] = "Активирует еффект Кубика с вычетом для артефактов в радиусе взрыва",
+							[CollectibleType.COLLECTIBLE_D1] = "Активирует эффект D1 кубика для подбираемых предметов в радиусе взрыва",
+							[CollectibleType.COLLECTIBLE_D4] = "Активирует эффект D4 кубика если Айзек в радиусе взрыва",
+							[CollectibleType.COLLECTIBLE_D7] = "Активирует эффект D7 кубика",
+							[CollectibleType.COLLECTIBLE_D8] = "Активирует эффект D8 кубика если Айзек в радиусе взрыва",
+							[CollectibleType.COLLECTIBLE_D10] = "Активирует эффект D10 кубика",
+							[CollectibleType.COLLECTIBLE_D12] = "Активирует эффект D12 кубика",
+							[CollectibleType.COLLECTIBLE_D20] = "Активирует эффект D20 кубика для подбираемых предметов в радиусе взрыва",
+							[CollectibleType.COLLECTIBLE_D100] = "Активирует эффект D100 для Айзека и подбираемых предметов в радиусе взрыва",
+							[CollectibleType.COLLECTIBLE_SPINDOWN_DICE] = "Активирует эффект Кубика с вычетом для артефактов в радиусе взрыва",
 						},
 						--[[spa = {
 					[CollectibleType.COLLECTIBLE_D1] = "",
@@ -566,15 +572,6 @@ RestoredCollection:AddModCompat("EID", function()
 					[CollectibleType.COLLECTIBLE_SPINDOWN_DICE] = "",
 				},]]
 					}
-
-					local DiceBombsModifiersItems = {
-						[1] = CollectibleType.COLLECTIBLE_D1,
-						[2] = CollectibleType.COLLECTIBLE_D4,
-						[3] = CollectibleType.COLLECTIBLE_D8,
-						[4] = CollectibleType.COLLECTIBLE_D20,
-						[5] = CollectibleType.COLLECTIBLE_D100,
-						[6] = CollectibleType.COLLECTIBLE_SPINDOWN_DICE,
-					}
 					local player
 					if HodlingTab() then
 						player = EID.holdTabPlayer
@@ -585,15 +582,55 @@ RestoredCollection:AddModCompat("EID", function()
 					if player ~= nil then
 						local lang = EID:getLanguage()
 
-						for i, col in ipairs(DiceBombsModifiersItems) do
-							if player:HasCollectible(col) then
-								if DiceBombsExtraDesc[lang] and type(DiceBombsExtraDesc[lang][col]) == "string" then
-									descObj.Description = descObj.Description
-										.. "#{{Collectible"
-										.. col
-										.. "}} "
-										.. DiceBombsExtraDesc[lang][col]
+						local function AddExtraDiceDesc(col, desc)
+							if DiceBombsExtraDesc[lang] and type(DiceBombsExtraDesc[lang][col]) == "string" then
+								desc.Description = desc.Description
+									.. "#{{Collectible"
+									.. col
+									.. "}} "
+									.. DiceBombsExtraDesc[lang][col]
+							end
+						end
+
+						local descriptionAdded = false
+						for i = 0, 2 do
+							local dice = player:GetActiveItem(i)
+							if REPENTOGON then
+								if dice == CollectibleType.COLLECTIBLE_D_INFINITY then
+									local DiceVarData = {
+										[0] = CollectibleType.COLLECTIBLE_D1,
+										[0x10000] = CollectibleType.COLLECTIBLE_D4,
+										[0x20000] = CollectibleType.COLLECTIBLE_D6,
+										[0x30000] = CollectibleType.COLLECTIBLE_ETERNAL_D6,
+										[0x40000] = CollectibleType.COLLECTIBLE_D7,
+										[0x50000] = CollectibleType.COLLECTIBLE_D8,
+										[0x60000] = CollectibleType.COLLECTIBLE_D10,
+										[0x70000] = CollectibleType.COLLECTIBLE_D12,
+										[0x80000] = CollectibleType.COLLECTIBLE_D20,
+										[0x90000] = CollectibleType.COLLECTIBLE_D100,
+									}
+									local activeItemDesc = player:GetActiveItemDesc(i)
+									dice = DiceVarData[activeItemDesc.VarData]
+										or DiceVarData[activeItemDesc.VarData - player:GetActiveMinUsableCharge(i)]
+									AddExtraDiceDesc(dice, descObj)
+									if dice == CollectibleType.COLLECTIBLE_ETERNAL_D6 then
+										descObj.Description = descObj.Description:gsub("5%%", "10%%")
+										return descObj
+									end
+									return descObj
 								end
+							end
+							if dice == CollectibleType.COLLECTIBLE_ETERNAL_D6 then
+								descObj.Description = descObj.Description:gsub("5%%", "10%%")
+								return descObj
+							end
+							if DiceBombsExtraDesc[lang] and type(DiceBombsExtraDesc[lang][dice]) == "string" then
+								descObj.Description = descObj.Description
+									.. "#{{Collectible"
+									.. dice
+									.. "}} "
+									.. DiceBombsExtraDesc[lang][dice]
+								return descObj
 							end
 						end
 					end
@@ -612,6 +649,7 @@ RestoredCollection:AddModCompat("EID", function()
 					end
 					if player ~= nil then
 						return Helpers.IsAnyPlayerType(player, PlayerType.PLAYER_KEEPER, PlayerType.PLAYER_KEEPER_B)
+							or Epiphany and Helpers.IsPlayerType(player, Epiphany.PlayerType.KEEPER)
 					else
 						return false
 					end
@@ -625,10 +663,11 @@ RestoredCollection:AddModCompat("EID", function()
 						player = Game():GetNearestPlayer(descObj.Entity.Position)
 					end
 					if player ~= nil then
-						local isKeeper, isTaintedKeeper =
+						local isKeeper, isTaintedKeeper, isTarnishedKeeper =
 							Helpers.IsPlayerType(player, PlayerType.PLAYER_KEEPER),
-							Helpers.IsPlayerType(player, PlayerType.PLAYER_KEEPER_B)
-						if isKeeper or isTaintedKeeper then
+							Helpers.IsPlayerType(player, PlayerType.PLAYER_KEEPER_B),
+							Epiphany and Helpers.IsPlayerType(player, Epiphany.PlayerType.KEEPER)
+						if isKeeper or isTaintedKeeper or isTarnishedKeeper then
 							local ext = descObj.Description:match("^(.-)#")
 							if ext and ext:match("↓ {{Blank}} {{Luck}}") and not ext:match("{{Player") then
 								descObj.Description = descObj.Description:gsub("^(.-)#", "")
@@ -636,7 +675,7 @@ RestoredCollection:AddModCompat("EID", function()
 									descObj.Description = descObj.Description:gsub("25", "16.7")
 									descObj.Description = descObj.Description:gsub("1%-3", "1-2")
 								end
-								if isTaintedKeeper then
+								if isTaintedKeeper or isTarnishedKeeper then
 									descObj.Description = descObj.Description:gsub("25", "12.5")
 									descObj.Description = descObj.Description:gsub("1%-3", "1")
 									descObj.Description = descObj.Description:gsub("pennies", "penny")

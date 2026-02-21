@@ -1,4 +1,4 @@
-local localversion = 1.0
+local localversion = 1.1
 local name = "Dice Bombs API"
 
 local function Log(str)
@@ -24,9 +24,25 @@ local function load(data)
 			"gfx/items/pick ups/bombs/costumes/dice_d6.png",
 			"gfx/items/pick ups/bombs/costumes/dice_d6_gold.png",
 		},
+		[CollectibleType.COLLECTIBLE_ETERNAL_D6] = {
+			"gfx/items/pick ups/bombs/costumes/dice_modded.png",
+			"gfx/items/pick ups/bombs/costumes/dice_modded_gold.png",
+		},
+		[CollectibleType.COLLECTIBLE_D7] = {
+			"gfx/items/pick ups/bombs/costumes/dice_modded.png",
+			"gfx/items/pick ups/bombs/costumes/dice_modded_gold.png",
+		},
 		[CollectibleType.COLLECTIBLE_D8] = {
 			"gfx/items/pick ups/bombs/costumes/dice_d8.png",
 			"gfx/items/pick ups/bombs/costumes/dice_d8_gold.png",
+		},
+		[CollectibleType.COLLECTIBLE_D10] = {
+			"gfx/items/pick ups/bombs/costumes/dice_modded.png",
+			"gfx/items/pick ups/bombs/costumes/dice_modded_gold.png",
+		},
+		[CollectibleType.COLLECTIBLE_D12] = {
+			"gfx/items/pick ups/bombs/costumes/dice_modded.png",
+			"gfx/items/pick ups/bombs/costumes/dice_modded_gold.png",
 		},
 		[CollectibleType.COLLECTIBLE_D20] = {
 			"gfx/items/pick ups/bombs/costumes/dice_d20.png",

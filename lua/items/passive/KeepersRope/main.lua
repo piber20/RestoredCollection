@@ -144,9 +144,10 @@ function KeepersRope:HereComesTheMoney(npc)
 		if player:HasCollectible(RestoredCollection.Enums.CollectibleType.COLLECTIBLE_KEEPERS_ROPE) then
 			local isKeeper = player:GetPlayerType() == PlayerType.PLAYER_KEEPER
 			local isTaintedKeeper = player:GetPlayerType() == PlayerType.PLAYER_KEEPER_B
-			local chance = isTaintedKeeper and 8 or (isKeeper and 6 or 4)
-			local coins = isTaintedKeeper and 1 or (isKeeper and 2 or 3)
-			if rng:RandomInt(chance) == 1 then
+			local isTarnishedKeeper = Epiphany and player:GetPlayerType() == Epiphany.PlayerType.KEEPER
+			local chance = (isTaintedKeeper or isTarnishedKeeper) and 8 or (isKeeper and 6 or 4)
+			local coins = (isTaintedKeeper or isTarnishedKeeper) and 1 or (isKeeper and 2 or 3)
+			if rng:RandomInt(chance) > -1 then
 				local entityData = Helpers.GetData(npc)
 				local mul = npc:IsBoss() and 2 or 1
 				entityData.CoinsToBeat = (rng:RandomInt(coins + 1)) * mul
@@ -225,7 +226,8 @@ RestoredCollection:AddCallback(ModCallbacks.MC_POST_ENTITY_KILL, KeepersRope.Dol
 
 function KeepersRope:NoSoap(player,cacheFlag)
 	if player:HasCollectible(RestoredCollection.Enums.CollectibleType.COLLECTIBLE_KEEPERS_ROPE) then
-		if cacheFlag == CacheFlag.CACHE_LUCK and not Helpers.IsAnyPlayerType(player, PlayerType.PLAYER_KEEPER, PlayerType.PLAYER_KEEPER_B) then
+		if cacheFlag == CacheFlag.CACHE_LUCK and (not Helpers.IsAnyPlayerType(player, PlayerType.PLAYER_KEEPER, PlayerType.PLAYER_KEEPER_B)
+		or Epiphany and not Helpers.IsPlayerType(player, Epiphany.PlayerType.KEEPER)) then
 			player.Luck = player.Luck - 2
 		end
 	end
